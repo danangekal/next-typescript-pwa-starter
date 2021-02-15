@@ -4,7 +4,9 @@
     "es2021": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:import/typescript",
     "airbnb"
   ],
   "parser": "@typescript-eslint/parser",
@@ -22,6 +24,8 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
     "no-console": 2,
     "no-unused-vars": 2,
     "react/jsx-filename-extension": 0,
