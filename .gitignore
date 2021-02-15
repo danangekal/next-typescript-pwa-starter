@@ -36,3 +36,7 @@ yarn-error.log*
 # package lock
 yarn.lock
 package-lock.json
+
+# PWA
+public/sw.js
+public/workbox*
