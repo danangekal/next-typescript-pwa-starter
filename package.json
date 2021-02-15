@@ -1,0 +1,73 @@
+{
+  "name": "next-typescript-pwa-stater",
+  "version": "0.1.0",
+  "description": "Unofficial Next.js + Typescript stater with a minimalistic & latest package",
+  "author": "Danang Eko Alfianto <github.com/danangekal>",
+  "homepage": "https://github.com/danangekal/next-typescript-pwa-stater#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danangekal/next-typescript-pwa-stater.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danangekal/next-typescript-pwa-stater/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "husky",
+    "prettier",
+    "lint-staged",
+    "nextjs",
+    "nextjs-stater",
+    "nextjs-typescript",
+    "PWA",
+    "reactjs",
+    "typescript"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "telemetry": "next telemetry",
+    "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --quiet --fix",
+    "format": "prettier --ignore-path .gitignore \"**/*.+(js|ts|tsx|css|scss)\" --write"
+  },
+  "dependencies": {
+    "next": "10.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "prettier": "2.2.1",
+    "typescript": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --quiet --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss,json,md,html}": [
+      "prettier --write"
+    ]
+  }
+}
