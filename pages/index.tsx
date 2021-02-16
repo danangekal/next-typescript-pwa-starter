@@ -4,7 +4,6 @@ import Nav from '../components/nav';
 export default function Home() {
   return (
     <div className={styles.container}>
-      \
       <Nav />
       <main className={styles.main}>
         <h1 className={styles.title}>
