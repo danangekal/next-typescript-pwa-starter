@@ -1,7 +1,7 @@
 {
   "name": "next-typescript-pwa-stater",
   "version": "0.1.0",
-  "description": "Unofficial Next.js + Typescript stater with a latest package",
+  "description": "Unofficial Next.js + Typescript + PWA stater with a latest package",
   "author": "Danang Eko Alfianto <github.com/danangekal>",
   "homepage": "https://github.com/danangekal/next-typescript-pwa-stater#readme",
   "repository": {
@@ -30,7 +30,7 @@
     "start": "next start",
     "telemetry": "next telemetry",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --quiet --fix",
-    "format": "prettier --ignore-path .gitignore \"**/*.+(js|ts|tsx|css|scss)\" --write"
+    "format": "prettier --ignore-path .gitignore \"**/*.+(js|ts|tsx|css|scss|json|md|html)\" --write"
   },
   "dependencies": {
     "next": "10.0.6",
