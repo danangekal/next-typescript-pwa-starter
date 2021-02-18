@@ -1,15 +1,15 @@
 {
-  "name": "next-typescript-pwa-stater",
+  "name": "next-typescript-pwa-starter",
   "version": "0.1.0",
-  "description": "Unofficial Next.js + Typescript + PWA stater with a latest package",
+  "description": "Unofficial Next.js + Typescript + PWA starter with a latest package",
   "author": "Danang Eko Alfianto <github.com/danangekal>",
-  "homepage": "https://github.com/danangekal/next-typescript-pwa-stater#readme",
+  "homepage": "https://github.com/danangekal/next-typescript-pwa-starter#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danangekal/next-typescript-pwa-stater.git"
+    "url": "git+https://github.com/danangekal/next-typescript-pwa-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/danangekal/next-typescript-pwa-stater/issues"
+    "url": "https://github.com/danangekal/next-typescript-pwa-starter/issues"
   },
   "license": "MIT",
   "keywords": [
@@ -18,7 +18,7 @@
     "prettier",
     "lint-staged",
     "nextjs",
-    "nextjs-stater",
+    "nextjs-starter",
     "nextjs-typescript",
     "PWA",
     "reactjs",

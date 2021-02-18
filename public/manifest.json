@@ -6,7 +6,7 @@
     "start_url": "/",
     "name": "Next Typescript PWA",
     "short_name": "Next Typescript PWA",
-    "description": "Unofficial Next.js   Typescript stater with a latest package",
+    "description": "Unofficial Next.js   Typescript starter with a latest package",
     "icons": [
         {
             "src": "/icons/icon-192x192.png",
