@@ -42,6 +42,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 - [Prettier 2](https://prettier.io/docs/en/index.html) - Documentation of Prettier.
 - [Husky 5](https://typicode.github.io/husky/#/) - Documentation of Husky.
 - [lint-staged 10](https://github.com/okonet/lint-staged) - Documentation of lint-staged.
+- [Next PWA 5](https://www.npmjs.com/package/next-pwa) - Documentation of Next PWA.
 
 ## Learn More
 

@@ -9,7 +9,11 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to
           {' '}
-          <a href="https://nextjs.org">Next.js!</a>
+          <a href="https://nextjs.org">Next.js</a>
+          {' '}
+          +
+          {' '}
+          <a href="https://www.npmjs.com/package/next-pwa">PWA!</a>
         </h1>
 
         <p className={styles.description}>
