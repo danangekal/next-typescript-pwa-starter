@@ -33,6 +33,28 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+#### Docker Build
+```bash
+docker build -t next-typescript-pwa-starter .
+```
+
+#### Docker Run
+```bash
+docker run --rm -it -p 3000:3000 next-typescript-pwa-starter
+```
+
+#### Docker Compose
+```bash
+docker-compose up
+```
+
+#### Docker Images
+You can use images available on docker hub [next-typescript-pwa-starter](https://hub.docker.com/r/danangekal/next-typescript-pwa-starter).
+
+```bash
+docker pull danangekal/next-typescript-pwa-starter
+```
+
 ## Features
 
 - [React.js 17](https://reactjs.org/blog/2020/10/20/react-v17.html) - Blog introduce React v17.0.
@@ -41,8 +63,9 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 - [Eslint 7](https://eslint.org/docs/user-guide/getting-started) - Documentation of Eslint.
 - [Prettier 2](https://prettier.io/docs/en/index.html) - Documentation of Prettier.
 - [Husky 5](https://typicode.github.io/husky/#/) - Documentation of Husky.
-- [lint-staged 10](https://github.com/okonet/lint-staged) - Documentation of lint-staged.
+- [Lint Staged 10](https://github.com/okonet/lint-staged) - Documentation of Lint Staged.
 - [Next PWA 5](https://www.npmjs.com/package/next-pwa) - Documentation of Next PWA.
+- [Docker](https://docs.docker.com/) - Documentation of Docker.
 
 ## Learn More
 
