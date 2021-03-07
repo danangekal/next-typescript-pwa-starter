@@ -14,11 +14,9 @@
   "license": "MIT",
   "keywords": [
     "nextjs",
-    "nextjs-starter",
-    "nextjs-typescript",
-    "pwa",
     "reactjs",
     "typescript",
+    "pwa",
     "eslint",
     "husky",
     "prettier",
