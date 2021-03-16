@@ -16,11 +16,11 @@
     "nextjs",
     "reactjs",
     "typescript",
-    "pwa",
     "eslint",
     "prettier",
     "husky",
-    "lint-staged"
+    "lint-staged",
+    "pwa"
   ],
   "scripts": {
     "dev": "next dev",
