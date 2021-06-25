@@ -38,4 +38,4 @@ package-lock.json
 
 # PWA
 public/sw.js
-public/workbox*
+public/workbox-*.js

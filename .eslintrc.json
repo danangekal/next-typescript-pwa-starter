@@ -3,24 +3,10 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:import/typescript",
-    "airbnb"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
-  },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "@typescript-eslint"],
+  "extends": ["next", "prettier"],
   "rules": {
-    "import/no-unresolved": 0,
     "import/extensions": 0,
+    "import/no-unresolved": 0,
     "no-console": 2,
     "no-unused-vars": 2,
     "react/jsx-filename-extension": 0,
