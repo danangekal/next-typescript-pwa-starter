@@ -13,7 +13,7 @@ You can check [demo](https://next-typescript-pwa-starter.vercel.app/)
 - [Docker](https://docs.docker.com/) - Documentation of docker.
 - [Eslint 7](https://eslint.org/docs/user-guide/getting-started) - Documentation of eslint.
 - [Prettier 2](https://prettier.io/docs/en/index.html) - Documentation of prettier.
-- [Husky 6](https://typicode.github.io/husky/#/) - Documentation of husky.
+- [Husky 7](https://typicode.github.io/husky/#/) - Documentation of husky.
 - [Lint Staged 11](https://github.com/okonet/lint-staged) - Documentation of lint staged.
 
 ## Usage
