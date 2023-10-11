@@ -7,18 +7,18 @@ You can check [demo](https://next-typescript-pwa-starter.vercel.app/)
 ## Features
 
 - [React.js 18](https://reactjs.org/blog/2022/03/29/react-v18.html) - Blog introduce react v18.0.
-- [Next.js 12](https://nextjs.org/blog/next-12) - Blog introduce next.js 12.
-- [Typescript 4](https://www.typescriptlang.org/) - Documentation of typescript.
+- [Next.js 13](https://nextjs.org/blog/next-13) - Blog introduce next.js 13.
+- [Typescript 5](https://www.typescriptlang.org/) - Documentation of typescript.
 - [Next PWA 5](https://www.npmjs.com/package/next-pwa) - Documentation of next pwa.
 - [Docker](https://docs.docker.com/) - Documentation of docker.
 - [Eslint 8](https://eslint.org/docs/user-guide/getting-started) - Documentation of eslint.
-- [Prettier 2](https://prettier.io/docs/en/index.html) - Documentation of prettier.
-- [Husky 7](https://typicode.github.io/husky/#/) - Documentation of husky.
-- [Lint Staged 13](https://github.com/okonet/lint-staged) - Documentation of lint staged.
+- [Prettier 3](https://prettier.io/docs/en/index.html) - Documentation of prettier.
+- [Husky 8](https://typicode.github.io/husky/#/) - Documentation of husky.
+- [Lint Staged 14](https://github.com/okonet/lint-staged) - Documentation of lint staged.
 
 ## Usage
 
-This project using node >= 14.19.2 & yarn
+This project using node >= 16.14 & yarn 1.22.19
 
 ### Installation
 
@@ -47,6 +47,8 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 #### Docker Build
 
