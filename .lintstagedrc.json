@@ -1,7 +1,3 @@
 {
-  "*.{css,scss,json,md,html}": "prettier --ignore-path .gitignore --write",
-  "*.{js,ts,tsx}": [
-    "prettier --ignore-path .gitignore --write",
-    "eslint --ignore-path .gitignore --quiet --fix"
-  ]
+  "*": "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
 }

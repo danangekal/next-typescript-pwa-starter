@@ -1,32 +1,37 @@
 {
-  "theme_color": "#585554",
-  "background_color": "#f0ebe6",
-  "display": "fullscreen",
+  "name": "Next TypeScript PWA Starter",
+  "short_name": "Next PWA",
+  "description": "Next.js 15 + React 19 + TypeScript + PWA starter with Biome and pnpm",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait-primary",
   "scope": "/",
   "start_url": "/",
-  "name": "Next Typescript PWA",
-  "short_name": "Next Typescript PWA",
-  "description": "Unofficial Next.js   Typescript starter with a latest package",
   "icons": [
     {
       "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/icons/icon-256x256.png",
       "sizes": "256x256",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/icons/icon-384x384.png",
       "sizes": "384x384",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/icons/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
