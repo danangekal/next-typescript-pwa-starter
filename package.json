@@ -1,7 +1,7 @@
 {
   "name": "next-typescript-pwa-starter",
   "version": "0.1.0",
-  "description": "Unofficial Next.js + Typescript + PWA starter with a latest package",
+  "description": "Next.js 15 + React 19 + TypeScript + PWA starter with Biome and pnpm",
   "author": "Danang Eko Alfianto <github.com/danangekal>",
   "homepage": "https://github.com/danangekal/next-typescript-pwa-starter#readme",
   "repository": {
@@ -14,47 +14,49 @@
   "license": "MIT",
   "keywords": [
     "nextjs",
+    "next15",
     "reactjs",
+    "react19",
     "typescript",
-    "eslint",
-    "prettier",
+    "biome",
+    "pnpm",
+    "serwist",
     "husky",
     "lint-staged",
     "pwa"
   ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --ignore-path .gitignore \"**/*.+(js|ts|tsx|css|scss|json|md|html)\" --write",
+    "telemetry": "next telemetry",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check --write .",
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit --watch",
     "test": "echo \"Write tests!\" && exit 0",
-    "prepare": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "prepare": "husky"
   },
   "dependencies": {
-    "next": "^13.5.4",
-    "next-pwa": "^5.6.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "15.5.4",
+    "@serwist/next": "^9.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.8.4",
-    "@types/react": "^18.2.27",
-    "@types/react-dom": "^18.2.12",
-    "eslint": "^8.51.0",
-    "eslint-config-next": "^13.5.4",
-    "eslint-config-prettier": "^9.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
-    "pinst": "^3.0.0",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.6",
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.3",
+    "serwist": "^9.0.0",
+    "typescript": "^5.7.3"
   },
   "engines": {
-    "node": ">=16.14"
-  }
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@10.0.0+sha512.b8fef5494bd3fe4cbd4edabd0745df2ee5be3e4b0b8b08fa643aa3e4c6702ccc0f00d68fa8a8c9858a735a0032485a44990ed2810526c875e416f001b17df12b"
 }

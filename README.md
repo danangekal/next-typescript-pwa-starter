@@ -6,38 +6,39 @@ You can check [demo](https://next-typescript-pwa-starter.vercel.app/)
 
 ## Features
 
-- [React.js 18](https://reactjs.org/blog/2022/03/29/react-v18.html) - Blog introduce react v18.0.
-- [Next.js 13](https://nextjs.org/blog/next-13) - Blog introduce next.js 13.
-- [Typescript 5](https://www.typescriptlang.org/) - Documentation of typescript.
-- [Next PWA 5](https://www.npmjs.com/package/next-pwa) - Documentation of next pwa.
-- [Docker](https://docs.docker.com/) - Documentation of docker.
-- [Eslint 8](https://eslint.org/docs/user-guide/getting-started) - Documentation of eslint.
-- [Prettier 3](https://prettier.io/docs/en/index.html) - Documentation of prettier.
-- [Husky 8](https://typicode.github.io/husky/#/) - Documentation of husky.
-- [Lint Staged 14](https://github.com/okonet/lint-staged) - Documentation of lint staged.
+- [React 19](https://react.dev/blog/2024/12/05/react-19) - Latest React version with improved performance
+- [Next.js 15](https://nextjs.org/blog/next-15) - Latest Next.js with Turbopack and React 19 support
+- [TypeScript 5.7](https://www.typescriptlang.org/) - Type-safe development with latest TypeScript
+- [Serwist](https://serwist.pages.dev/) - Modern PWA toolkit (successor to next-pwa)
+- [Biome](https://biomejs.dev/) - Fast formatter and linter (replaces ESLint + Prettier)
+- [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
+- [Docker](https://docs.docker.com/) - Container support for deployment
+- [Husky](https://typicode.github.io/husky/) - Git hooks for code quality
+- [lint-staged](https://github.com/okonet/lint-staged) - Run linters on staged files
 
 ## Usage
 
-This project using node >= 16.14 & yarn 1.22.19
+This project requires Node.js >= 22.0.0 and pnpm >= 9.0.0
 
 ### Installation
 
 ```bash
 git clone https://github.com/danangekal/next-typescript-pwa-starter.git
-yarn install
+pnpm install
 ```
 
 #### Development
 
 ```bash
-yarn dev
+pnpm dev              # Start dev server with Turbopack
+pnpm dev:legacy       # Start dev server without Turbopack (if needed)
 ```
 
 #### Production
 
 ```bash
-yarn build
-yarn start
+pnpm build
+pnpm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -50,13 +51,29 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-#### Docker Build
+### Code Quality
+
+This project uses Biome for linting and formatting:
+
+```bash
+pnpm lint              # Lint code with Biome
+pnpm format            # Format code with Biome
+pnpm check             # Lint and format (auto-fix) with Biome
+pnpm type-check        # TypeScript type checking
+pnpm type-check:watch  # TypeScript type checking in watch mode
+```
+
+Pre-commit hooks automatically run via Husky and lint-staged to ensure code quality.
+
+### Docker
+
+#### Build
 
 ```bash
 docker build -t next-typescript-pwa-starter .
 ```
 
-#### Docker Run
+#### Run
 
 ```bash
 docker run --rm -it -p 3000:3000 next-typescript-pwa-starter
@@ -68,9 +85,9 @@ docker run --rm -it -p 3000:3000 next-typescript-pwa-starter
 docker-compose up
 ```
 
-#### Docker Images
+#### Pre-built Images
 
-You can use images available on docker hub [next-typescript-pwa-starter](https://hub.docker.com/r/danangekal/next-typescript-pwa-starter).
+You can use images available on Docker Hub: [next-typescript-pwa-starter](https://hub.docker.com/r/danangekal/next-typescript-pwa-starter)
 
 ```bash
 docker pull danangekal/next-typescript-pwa-starter
